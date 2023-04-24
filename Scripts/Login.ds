@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='' exectype='runstepbystep' errorhandling='' type='JsDPL' locale=''/>
+<fallback useFallback='true'/>
+<step action='navigateTo' value='"https://staging.formsintelligence.mrisoftware.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://mrisaas.okta.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='setValue' value='"jagadeesh.chandrasekar@mrisoftware.com"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='textbox(&quot;okta-signin-username&quot;)' selected='true'/>
+   <accessor type='setValue' value='textbox(&quot;username&quot;)' selected='false'/>
+   <accessor type='setValue' value='textbox(0, _in(span(&quot;focused-input input-fix o-form-control o-form-input-name-username okta-form-input-field&quot;)))' selected='false'/>
+   <accessor type='setValue' value='textbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='setValue' value='"Sivayanama@6666"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setValue' value='password(&quot;okta-signin-password&quot;)' selected='true'/>
+   <accessor type='setValue' value='password(&quot;password&quot;)' selected='false'/>
+   <accessor type='setValue' value='password(0, _in(span(&quot;focused-input input-fix o-form-control o-form-input-name-password okta-form-input-field&quot;)))' selected='false'/>
+   <accessor type='setValue' value='password(0)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(0, _in(div(&quot;o-form-button-bar&quot;)))' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='submit(&quot;button button-primary&quot;)' selected='true'/>
+   <accessor type='click' value='submit(&quot;Send Push&quot;)' selected='false'/>
+   <accessor type='click' value='submit(0, _in(div(&quot;o-form-button-bar&quot;)))' selected='false'/>
+   <accessor type='click' value='submit(0)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://staging.formsintelligence.mrisoftware.com/login/callback"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='checkbox(&quot;k-checkbox k-checkbox-sm k-rounded-md&quot;)' selected='true'/>
+   <accessor type='click' value='checkbox(0, _in(span(&quot;Show Archived Projects&quot;)))' selected='false'/>
+   <accessor type='click' value='checkbox(0)' selected='false'/>
+</dialect>
+</step>
+<step action='clickXY' value='"10,14"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='clickXY' value='image(&quot;The user icon&quot;)' selected='true'/>
+   <accessor type='clickXY' value='image(&quot;https://staging.formsintelligence.mrisoftware.com/images/user_icon.svg&quot;)' selected='false'/>
+   <accessor type='clickXY' value='image(0, _in(div(&quot;dropdown title-bar-avatar&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='image(1)' selected='false'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://mrisaas.okta.com/oauth2/ausqnuulj2YeXzmZ51t7/v1/logout?id_token_hint=eyJraWQiOiJXU1hZQURyXzdBajg3bnFtS1pkTGJ0TGhhRThJVnZmcFZRRDVkRzdOM3ZFIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIwMHVzNm45aXF2WnVwcFNKZjF0NyIsIm5hbWUiOiJKYWdhZGVlc2ggQ2hhbmRyYXNla2FyIiwidmVyIjoxLCJpc3MiOiJodHRwczovL21yaXNhYXMub2t0YS5jb20vb2F1dGgyL2F1c3FudXVsajJZZVh6bVo1MXQ3IiwiYXVkIjoiMG9hcW51bmMxcFVtaUNUbWgxdDciLCJpYXQiOjE2ODIzNDE1NzMsImV4cCI6MTY4MjM0NTE3MywianRpIjoiSUQuNG5ydWZpRl9xTmRNYVdxT1YxUUtadlF5SDBqdU9mdWNsZ3VYUzJxQ1c2byIsImFtciI6WyJtZmEiLCJzd2siLCJwd2QiXSwiaWRwIjoiMDBvMmoxeWxyZDhrOUdJUG8xdDciLCJub25jZSI6ImluSGxiQVI0ckNUZ0YycDFaWEJYOHBOOWRnMjFZYTUwbmxvVFlXZU8zUmNwazI4TzgwR2RQQkhkeDRzVUc5cEgiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJKYWdhZGVlc2guQ2hhbmRyYXNla2FyQG1yaXNvZnR3YXJlLmNvbSIsImF1dGhfdGltZSI6MTY4MjM0MTU0NywiYXRfaGFzaCI6IkFkS1hsUHZDUnVIU1dFcEljaDNQQVEifQ.AWCl7aGA-wElRD5DQDl4Rr8rXJW5fhxXfACsqzhoFPzJ5j5_UYgIANwCoW7hGD3L_Uh_hER1XTdMQxY2vHYOmSTJ9s4O378yy4vqP_EeP08qNtHAijD6wI3dIDVEXOLDCp5xeN9IHUtreNO8i8TfY4cS_kl3ODIqtk-S4mHOBRh4a2J5J7F_UUKpa3QcCX-_msGxMj8mYdDhtJlbe5pr-_DGRV_E-idLovSRmioqmWmx6JVtKNxv6dKqZBJA8hDxJuhvbG86T6EiBufVXi7qROn67AHbAcT7URPsilMhOmikNvZgoSipubTX8GRj-2pkIHgmlqCO1MvSvOBtQVIpBw&amp;post_logout_redirect_uri=https%3A%2F%2Fstaging.formsintelligence.mrisoftware.com"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://staging.formsintelligence.mrisoftware.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+<step action='navigateTo' value='"https://mrisaas.okta.com/signin/refresh-auth-state/00w6gIeHUT_-iR0dQnt1LHIyM6HLNgGI5kl_b3Ovsi"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='navigateTo' value='' selected='true'/>
+</dialect>
+</step>
+</testcase>
