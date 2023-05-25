@@ -1,2 +1,2 @@
-UserName,Password
-"test.perfuser1@test.mrisoftware.local","Password1!"
+EnvironmentURL,UserName,Password
+https://dev.formsintelligence.mrisoftware.com/,test.perfuser1@test.mrisoftware.local,Password1!
