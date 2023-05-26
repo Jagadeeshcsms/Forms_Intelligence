@@ -8,7 +8,7 @@
    <accessor type='include' value='"REPOSITORY/Forms_Intelligence/Scripts/Login.ds"' selected='false'/>
 </dialect>
 </step>
-<step action='navigateTo' value='"https://dev.formsintelligence.mrisoftware.com/login/callback"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='navigateTo' value='"https://dev.formsintelligence.mrisoftware.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='navigateTo' value='' selected='true'/>
 </dialect>
