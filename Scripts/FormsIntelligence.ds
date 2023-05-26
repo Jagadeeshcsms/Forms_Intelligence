@@ -1,11 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testcase  name= '' description='' author='' version=''>
-<dpl filename='{ds}/../LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale=''/>
+<dpl filename='{ds}/../LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
 <fallback useFallback='true'/>
 <step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='include' value='"{ds}/Login.ds"' selected='true'/>
-   <accessor type='include' value='' selected='false'/>
    <accessor type='include' value='"REPOSITORY/Forms_Intelligence/Scripts/Login.ds"' selected='false'/>
 </dialect>
 </step>
