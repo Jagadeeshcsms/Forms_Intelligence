@@ -2,30 +2,12 @@
 <testcase  name= '' description='' author='' version=''>
 <dpl filename='' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='null'/>
 <fallback useFallback='true'/>
-<step action='navigateTo' value='"https://dev.formsintelligence.mrisoftware.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='include' value='"Password1!"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='navigateTo' value='' selected='true'/>
-</dialect>
-</step>
-<step action='navigateTo' value='"https://mrisaas.oktapreview.com/signin/refresh-auth-state/00Z3U_EcIrVHz0-0W3hcxoxcDl0lA1zDWsKCgzoEOS"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='navigateTo' value='' selected='true'/>
-</dialect>
-</step>
-<step action='setValue' value='"test.perfuser1@test.mrisoftware.local"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='setValue' value='textbox(&quot;okta-signin-username&quot;)' selected='true'/>
-   <accessor type='setValue' value='textbox(&quot;username&quot;)' selected='false'/>
-   <accessor type='setValue' value='textbox(0, _in(span(&quot;focused-input input-fix o-form-control o-form-input-name-username okta-form-input-field&quot;)))' selected='false'/>
-   <accessor type='setValue' value='textbox(0)' selected='false'/>
-</dialect>
-</step>
-<step action='setValue' value='"Password1!"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='setValue' value='password(&quot;okta-signin-password&quot;)' selected='true'/>
-   <accessor type='setValue' value='password(&quot;password&quot;)' selected='false'/>
-   <accessor type='setValue' value='password(0, _in(span(&quot;focused-input input-fix o-form-control o-form-input-name-password okta-form-input-field&quot;)))' selected='false'/>
-   <accessor type='setValue' value='password(0)' selected='false'/>
+   <accessor type='include' value='password(&quot;okta-signin-password&quot;)' selected='true'/>
+   <accessor type='include' value='password(&quot;password&quot;)' selected='false'/>
+   <accessor type='include' value='password(0, _in(span(&quot;focused-input input-fix o-form-control o-form-input-name-password okta-form-input-field&quot;)))' selected='false'/>
+   <accessor type='include' value='password(0)' selected='false'/>
 </dialect>
 </step>
 <step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
