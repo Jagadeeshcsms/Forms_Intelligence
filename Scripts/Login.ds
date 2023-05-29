@@ -63,19 +63,19 @@
    <accessor type='click' value='span(&quot;Or click to upload&quot;)' selected='false'/>
 </dialect>
 </step>
-<step action='setBulkFiles2' value='"{ds}/../TestData/"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
+<step action='setBulkFiles2' value='"{ds}/../TestData/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='setBulkFiles2' value='   file(0)' selected='true'/>
    <accessor type='setBulkFiles2' value='' selected='false'/>
    <accessor type='setBulkFiles2' value='  file(0)' selected='false'/>
 </dialect>
 </step>
-<step action='wait' value='20000' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
+<step action='wait' value='20000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='wait' value='' selected='true'/>
 </dialect>
 </step>
-<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='click' value='span(&quot;Upload&quot;)' selected='true'/>
    <accessor type='click' value='span(0, _in(button(&quot;control-item-export mri-button mri-button--primary&quot;)))' selected='false'/>
