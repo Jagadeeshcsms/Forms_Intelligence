@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<testcase  name= '' description='' author='' version=''>
-<dpl filename='{ds}/../LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
-<fallback useFallback='true'/>
-</testcase>
