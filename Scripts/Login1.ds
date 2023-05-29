@@ -2,12 +2,12 @@
 <testcase  name= '' description='' author='' version=''>
 <dpl filename='{ds}/../LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
 <fallback useFallback='true'/>
-<step action='navigateTo' value='"https://dev.formsintelligence.mrisoftware.com/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='navigateTo' value='$EnvironmentURL' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='navigateTo' value='' selected='true'/>
 </dialect>
 </step>
-<step action='setValue' value='"test.perfuser1@test.mrisoftware.local"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='setValue' value='$UserName' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='setValue' value='textbox(&quot;okta-signin-username&quot;)' selected='true'/>
    <accessor type='setValue' value='textbox(&quot;username&quot;)' selected='false'/>
@@ -15,7 +15,7 @@
    <accessor type='setValue' value='textbox(0)' selected='false'/>
 </dialect>
 </step>
-<step action='click' value='"Password1!"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='click' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='click' value='div(&quot;signin-container&quot;)' selected='true'/>
    <accessor type='click' value='div(0, _in(div(&quot;content&quot;)))' selected='false'/>
