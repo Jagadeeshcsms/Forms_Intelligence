@@ -7,11 +7,6 @@
    <accessor type='navigateTo' value='' selected='true'/>
 </dialect>
 </step>
-<step action='navigateTo' value='"https://mrisaas.oktapreview.com/"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='navigateTo' value='' selected='true'/>
-</dialect>
-</step>
 <step action='setValue' value='$UserName' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='setValue' value='textbox(&quot;okta-signin-username&quot;)' selected='true'/>
