@@ -4,7 +4,7 @@ for (i = 1; i <= pageno; i++) {
     var ChkNo = parseInt(_eval("ds$('table tbody tr').find('td:contains(\"Data extraction complete\")').length"));
     log(ChkNo);
     for (k = 1; k <= ChkNo; k++) {
-        click(byXPath('(//td[contains(text(),"Uploaded")]//parent::tr//input[@type="checkbox"])[' + k + ']'));
+        click(byXPath('(//td[contains(text(),"Data extraction complete")]//parent::tr//input[@type="checkbox"])[' + k + ']'));
     }
     if (i < pageno) {
         var ind = i + 1;
