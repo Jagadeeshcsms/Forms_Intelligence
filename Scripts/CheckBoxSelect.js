@@ -1,4 +1,4 @@
-ar pageno = parseInt(getText(byXPath('(//div[@class="k-pager-numbers"]//button)[last()]')));
+var pageno = parseInt(getText(byXPath('(//div[@class="k-pager-numbers"]//button)[last()]')));
 log(pageno);
 for (i = 1; i <= pageno; i++) {
     var ChkNo = parseInt(_eval("ds$('table tbody tr').find('td:contains(\"Uploaded\")').length"));
