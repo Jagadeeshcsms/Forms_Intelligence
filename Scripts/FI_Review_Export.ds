@@ -44,39 +44,4 @@
    <accessor type='click' value='span(&quot;mri-button__label&quot;)' selected='false'/>
 </dialect>
 </step>
-<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='click' value='span(&quot;mri-button__label&quot;)' selected='true'/>
-   <accessor type='click' value='span(0, _in(button(&quot;mri-button&quot;)))' selected='false'/>
-   <accessor type='click' value='span(0, _in(button(&quot;Mark as reviewed&quot;)))' selected='false'/>
-   <accessor type='click' value='span(5)' selected='false'/>
-   <accessor type='click' value='span(&quot;Mark as reviewed&quot;)' selected='false'/>
-</dialect>
-</step>
-<step action='setSelected' value='"CSV"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='setSelected' value='select(&quot;exportFileOptions&quot;)' selected='true'/>
-   <accessor type='setSelected' value='select(&quot;fileExportOptions&quot;)' selected='false'/>
-   <accessor type='setSelected' value='select(0, _in(div(&quot;exportFileContainer&quot;)))' selected='false'/>
-   <accessor type='setSelected' value='select(1)' selected='false'/>
-</dialect>
-</step>
-<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='click' value='button(&quot;Export&quot;)' selected='true'/>
-   <accessor type='click' value='button(2, _in(div(&quot;review-page-buttons&quot;)))' selected='false'/>
-   <accessor type='click' value='button(2, _in(div(&quot;ReviewedReset AllExport&quot;)))' selected='false'/>
-   <accessor type='click' value='button(1)' selected='false'/>
-   <accessor type='click' value='button(&quot;mri-button mri-button--primary review-page-export&quot;)' selected='false'/>
-</dialect>
-</step>
-<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='click' value='span(&quot;Export Data&quot;)' selected='true'/>
-   <accessor type='click' value='span(0, _in(button(&quot;mri-button mri-button--primary&quot;)))' selected='false'/>
-   <accessor type='click' value='span(0, _in(button(&quot;Export Data&quot;)))' selected='false'/>
-   <accessor type='click' value='span(9)' selected='false'/>
-   <accessor type='click' value='span(&quot;mri-button__label[4]&quot;)' selected='false'/>
-</dialect>
-</step>
 </testcase>
