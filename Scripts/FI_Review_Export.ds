@@ -64,28 +64,37 @@
    <accessor type='store' value='$RoeCounter' selected='true'/>
 </dialect>
 </step>
-<step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='while' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='' value='' selected='true'/>
+   <accessor type='while' value='  $RowCounter&lt;$NumberOfRows' selected='true'/>
+   <accessor type='while' value='' selected='false'/>
 </dialect>
 </step>
-<step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='' value='' selected='true'/>
+   <accessor type='click' value='    Click(&quot;review-form-change-next[&quot;+$RowCounter+&quot;]&quot;)' selected='true'/>
+   <accessor type='click' value='' selected='false'/>
+   <accessor type='click' value='  Click()' selected='false'/>
+   <accessor type='click' value='   Click(&quot;3,in(div&quot;) ' selected='false'/>
 </dialect>
 </step>
-<step action='' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='store' value='$RowCounter+1' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='' value='' selected='true'/>
+   <accessor type='store' value='  $RowCounter' selected='true'/>
+</dialect>
+</step>
+<step action='endWhile' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='endWhile' value='' selected='true'/>
 </dialect>
 </step>
 <step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='click' value='span(&quot;&gt;&quot;)' selected='true'/>
-   <accessor type='click' value='span(3, _in(div(&quot;form-navigation page-number-toggle&quot;)))' selected='false'/>
-   <accessor type='click' value='span(3, _in(div(&quot;Form&lt;1/4&gt;&quot;)))' selected='false'/>
+   <accessor type='click' value='span(&quot;review-form-change-next&quot;)' selected='true'/>
    <accessor type='click' value='span(4)' selected='false'/>
-   <accessor type='click' value='span(&quot;review-form-change-next&quot;)' selected='false'/>
+   <accessor type='click' value='span(&quot;&gt;&quot;)' selected='false'/>
+   <accessor type='click' value='span(3, _in(div(&quot;Form&lt;1/4&gt;&quot;)))' selected='false'/>
+   <accessor type='click' value='span(3, _in(div(&quot;form-navigation page-number-toggle&quot;)))' selected='false'/>
 </dialect>
 </step>
 <step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
