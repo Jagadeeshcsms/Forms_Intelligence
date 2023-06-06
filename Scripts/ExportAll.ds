@@ -1,11 +1,34 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testcase  name= '' description='' author='' version=''>
-<dpl filename='REPOSITORY/Forms_Intelligence/LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
+<dpl filename='{ds}/../LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
 <fallback useFallback='true'/>
 <step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='include' value='"{ds}/Login.ds"' selected='true'/>
    <accessor type='include' value='' selected='false'/>
+</dialect>
+</step>
+<step action='clickXY' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='clickXY' value='div(&quot;UK DLUHC 2022&quot;)' selected='true'/>
+   <accessor type='clickXY' value='div(0, _in(div(&quot;project-card-body[5]&quot;)))' selected='false'/>
+   <accessor type='clickXY' value='div(75)' selected='false'/>
+   <accessor type='clickXY' value='div(&quot;project-card-header[5]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Review &amp; Export&quot;)' selected='true'/>
+   <accessor type='click' value='span(0, _in(div(&quot;Review &amp; Export 4&quot;)))' selected='false'/>
+   <accessor type='click' value='span(4)' selected='false'/>
+   <accessor type='click' value='span(0, _in(div(&quot;assets-title-tab[1]&quot;)))' selected='false'/>
+</dialect>
+</step>
+<step action='include' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='include' value='checkbox(&quot;k-checkbox k-checkbox-md k-rounded-md[3]&quot;)' selected='true'/>
+   <accessor type='include' value='checkbox(0, _in(cell(&quot;grid-cell-style-select[2]&quot;)))' selected='false'/>
+   <accessor type='include' value='checkbox(3)' selected='false'/>
 </dialect>
 </step>
 </testcase>
