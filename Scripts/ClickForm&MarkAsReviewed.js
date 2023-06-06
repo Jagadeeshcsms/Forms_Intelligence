@@ -4,7 +4,7 @@ log(docno);
 for (i = 1; i <= docno; i++) {
   	wait(1000)
     click(span("review-form-change-next"));
-    wait(2000)
+    wait(1000)
     click(button("Mark as reviewed"));
-    wait(2000)
+    wait(3000)
 }
