@@ -47,6 +47,20 @@
    <accessor type='setBulkFiles2' value=' byXPath(&apos;//*[@type=&quot;file&quot;]&apos;)' selected='false'/>
 </dialect>
 </step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(0, _in(button(&quot;Upload&quot;)))' selected='true'/>
+   <accessor type='click' value='span(0, _in(button(&quot;control-item-export mri-button mri-button--primary&quot;)))' selected='false'/>
+   <accessor type='click' value='span(0)' selected='false'/>
+   <accessor type='click' value='span(&quot;Upload&quot;)' selected='false'/>
+   <accessor type='click' value='span(&quot;mri-button__label&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='wait' value='10000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
+</dialect>
+</step>
 <step action='setBulkFiles2' value='"{ds}/../TestData/10files/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='setBulkFiles2' value='    byXPath(&apos;//*[@type=&quot;file&quot;]&apos;)' selected='true'/>
