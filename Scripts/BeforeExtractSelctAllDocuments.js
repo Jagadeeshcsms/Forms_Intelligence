@@ -6,6 +6,7 @@ for (i = 1; i <= pageno; i++) {
   	wait(2000);
     for (k = 1; k <= ChkNo; k++) {
         click(byXPath('(//td[contains(text(),"Uploaded")]//parent::tr//input[@type="checkbox"])[' + k + ']'));
+      wait(10000);
     }
     if (i < pageno) {
         var ind = i + 1;
