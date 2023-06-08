@@ -125,6 +125,10 @@
     </options>
     <options type="jira">
       <opt name="useJira" value="false"/>
+      <opt name="jiraConfiguration" value="MRITest"/>
+      <opt name="jiraIssueTypes" value="Bug"/>
+      <opt name="jiraFailure" value="1"/>
+      <opt name="jiraSuccess" value="10002"/>
     </options>
     <options type="lr">
       <opt name="saveCompleteLrOutputLog" value="false"/>
