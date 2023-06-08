@@ -159,9 +159,9 @@
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="loadtest" subtype="load">
+  <execution type="loadtest" subtype="performance">
     <iteration name="FormsIntelligence" controller="FormsIntelligence" completiontype="totalexecutions">
-      <testcase name="FI" users="1" totalexecutions="1"/>
+      <testcase name="FI" users="1"/>
     </iteration>
   </execution>
   <logs/>
