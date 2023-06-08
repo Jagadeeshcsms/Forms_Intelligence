@@ -2,45 +2,66 @@
 <testcase  name= '' description='' author='' version=''>
 <dpl filename='{ds}/../LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
 <fallback useFallback='true'/>
-<step action='include' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='include' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='include' value='"{ds}/Login.ds"' selected='true'/>
-   <accessor type='include' value='password(&quot;password&quot;)' selected='false'/>
-   <accessor type='include' value='password(0, _in(span(&quot;focused-input input-fix o-form-control o-form-input-name-password okta-form-input-field&quot;)))' selected='false'/>
-   <accessor type='include' value='password(0)' selected='false'/>
-   <accessor type='include' value='password(&quot;okta-signin-password&quot;)' selected='false'/>
+   <accessor type='include' value='submit(&quot;button button-primary&quot;)' selected='false'/>
+   <accessor type='include' value='submit(&quot;Sign In&quot;)' selected='false'/>
+   <accessor type='include' value='submit(0, _in(div(&quot;focused-input o-form-button-bar&quot;)))' selected='false'/>
+   <accessor type='include' value='submit(0)' selected='false'/>
+   <accessor type='include' value='submit(&quot;okta-signin-submit&quot;)' selected='false'/>
    <accessor type='include' value='"{ds}/Login1.ds"' selected='false'/>
 </dialect>
 </step>
-<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='click' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='click' value='paragraph(&quot;UK DLUHC Leaseholder DOC 2022&quot;)' selected='true'/>
-   <accessor type='click' value='paragraph(0, _in(div(&quot;project-card-header[4]&quot;)))' selected='false'/>
-   <accessor type='click' value='paragraph(0, _in(div(&quot;UK DLUHC 2022&quot;)))' selected='false'/>
-   <accessor type='click' value='paragraph(4)' selected='false'/>
-   <accessor type='click' value='paragraph(&quot;project-card-title[4]&quot;)' selected='false'/>
-   <accessor type='click' value='paragraph(&quot;UK DLUHC 2022&quot;)' selected='false'/>
-   <accessor type='click' value=' paragraph(&quot;UK DLUHC Leaseholder DOC 2022&quot;) ' selected='false'/>
-</dialect>
-</step>
-<step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='include' value='"{ds}/FI_MultipleFilesUpload.js"' selected='true'/>
-</dialect>
-</step>
-<step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
-  <dialect type='sahi'>
-   <accessor type='include' value='"{ds}/BeforeExtractSelctAllDocuments.js"' selected='true'/>
-   <accessor type='include' value='"{ds}/CliclPageinAddForms.js"' selected='false'/>
+   <accessor type='click' value='div(&quot;UK DLUHC 2022&quot;)' selected='true'/>
+   <accessor type='click' value='div(0, _in(div(&quot;project-card-body[4]&quot;)))' selected='false'/>
+   <accessor type='click' value='div(64)' selected='false'/>
+   <accessor type='click' value='div(&quot;project-card-header[4]&quot;)' selected='false'/>
 </dialect>
 </step>
 <step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='click' value='span(&quot;Extract&quot;)' selected='true'/>
-   <accessor type='click' value='span(0, _in(button(&quot;mri-button mri-button--primary&quot;)))' selected='false'/>
-   <accessor type='click' value='span(0, _in(button(&quot;Extract&quot;)))' selected='false'/>
-   <accessor type='click' value='span(7)' selected='false'/>
-   <accessor type='click' value='span(&quot;mri-button__label[1]&quot;)' selected='false'/>
+   <accessor type='click' value='span(&quot;Review &amp; Export&quot;)' selected='true'/>
+   <accessor type='click' value='span(0, _in(div(&quot;Review &amp; Export 5&quot;)))' selected='false'/>
+   <accessor type='click' value='span(4)' selected='false'/>
+   <accessor type='click' value='span(0, _in(div(&quot;assets-title-tab[1]&quot;)))' selected='false'/>
+</dialect>
+</step>
+<step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
+</dialect>
+</step>
+<step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='include' value='"{ds}/SelectCheckBoxInReviewPage.js"' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='button(&quot;Review&quot;)' selected='true'/>
+   <accessor type='click' value='button(0, _in(div(&quot;control-item-container&quot;)))' selected='false'/>
+   <accessor type='click' value='button(0, _in(div(&quot;ReviewExportExport AllDelete[1]&quot;)))' selected='false'/>
+   <accessor type='click' value='button(0)' selected='false'/>
+   <accessor type='click' value='button(&quot;mri-button mri-button--primary&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='wait' value='5000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
+</dialect>
+</step>
+<step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='include' value='"{ds}/ClickForm&amp;MarkAsReviewed.js"' selected='true'/>
+   <accessor type='include' value='"{ds}/Form&amp;MarkAsReviewed.js"' selected='false'/>
+</dialect>
+</step>
+<step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='include' value='"{ds}/Logout.ds"' selected='true'/>
 </dialect>
 </step>
 </testcase>
