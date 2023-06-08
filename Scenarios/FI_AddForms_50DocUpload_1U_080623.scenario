@@ -37,7 +37,7 @@
     <resource name="Logout.ds" type="ds" path="{scenario}/../Scripts/Logout.ds"/>
   </resources>
   <testnodes>
-    <cloud name="Cloud-1" type="Grid" instantiate="none" terminate="none" reboot="never" amount="-1" config="{scenario}/../../MCI_Perforemance/TestNodes.cloud" username="appvance" password="appvance"/>
+    <node name="localhost-1" location="http://3.131.246.170:8080/TMServer/ws/TestNode" username="appvance" password="appvance" bandwidth_enabled="false" latency_enabled="false"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
