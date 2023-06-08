@@ -171,7 +171,7 @@
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
-  <monitoring enablednodes="true" enabledtarget="false"/>
+  <monitoring enablednodes="true"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="FormsIntelligence" controller="FormsIntelligence" completiontype="totalexecutions">
       <testcase name="FI" state="users" users="1"/>
