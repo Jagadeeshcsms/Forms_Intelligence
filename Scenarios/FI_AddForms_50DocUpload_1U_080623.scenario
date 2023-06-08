@@ -155,6 +155,11 @@
         <run name="FI" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Chrome"/>
       </test>
     </testcase>
+    <testcase name="FI-copy" importance="normal">
+      <test>
+        <run name="FI" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Chrome"/>
+      </test>
+    </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
