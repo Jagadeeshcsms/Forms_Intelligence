@@ -152,10 +152,18 @@
     </controller>
     <testcase name="FI" importance="normal">
       <test>
-        <run name="FI" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Chrome"/>
+        <run name="FI" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Chrome">
+          <argument name="Untitled1" method="getNextData" dpl="Login"/>
+          <argument name="Untitled2" method="getData" dpl="TheLocker"/>
+        </run>
       </test>
     </testcase>
     <testcase name="FI-copy" importance="normal">
+      <test>
+        <run name="FI" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Chrome"/>
+      </test>
+    </testcase>
+    <testcase name="FI-copy(2)" importance="normal">
       <test>
         <run name="FI" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Chrome"/>
       </test>
@@ -166,7 +174,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="FormsIntelligence" controller="FormsIntelligence" completiontype="totalexecutions">
-      <testcase name="FI" users="1"/>
+      <testcase name="FI" state="users" users="1"/>
     </iteration>
   </execution>
   <logs/>
