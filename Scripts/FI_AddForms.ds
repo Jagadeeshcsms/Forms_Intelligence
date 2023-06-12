@@ -37,7 +37,14 @@
    <accessor type='wait' value='' selected='true'/>
 </dialect>
 </step>
-<step action='include' value='' type='web' desc='SelectingMultipleDocuments_ClickOnUpload' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='setBulkFiles' value='"{ds}/../TestData/50files/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setBulkFiles' value='    byXPath(&apos;//*[@type=&quot;file&quot;]&apos;)' selected='true'/>
+   <accessor type='setBulkFiles' value='' selected='false'/>
+   <accessor type='setBulkFiles' value='  ' selected='false'/>
+</dialect>
+</step>
+<step action='include' value='' type='web' desc='SelectingMultipleDocuments_ClickOnUpload' isThinkTime='false' isCommented='true' sequence='0'>
   <dialect type='sahi'>
    <accessor type='include' value='"{ds}/FI_MultipleFilesUpload.js"' selected='true'/>
 </dialect>
