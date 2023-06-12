@@ -3,10 +3,10 @@ log(pageno);
 for (i = 1; i <= pageno; i++) {
     var ChkNo = parseInt(_eval("ds$('table tbody tr').find('td:contains(\"Uploaded\")').length"));
     log(ChkNo);
-  	wait(20000);
+  	wait(3000);
     for (k = 1; k <= ChkNo; k++) {
         click(byXPath('(//td[contains(text(),"Uploaded")]//parent::tr//input[@type="checkbox"])[' + k + ']'));
-      wait(20000);
+      wait(1000);
     }
     if (i < pageno) {
         var ind = i + 1;
