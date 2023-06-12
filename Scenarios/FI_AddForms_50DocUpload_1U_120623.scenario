@@ -20,7 +20,7 @@
 -->
 <testscenario xmlns="www.pushtotest.com/tm5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="www.pushtotest.com/XSD/testscenario.xsd" version="2.0">
   <basics>
-    <name>FI_AddForms_50DocUpload_1U_080623.scenario</name>
+    <name>FI_AddForms_50DocUpload_1U_120623.scenario</name>
     <defaultdirectory/>
     <basicName/>
     <creator/>
@@ -174,7 +174,7 @@
   <monitoring enablednodes="true"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="FormsIntelligence" controller="FormsIntelligence" completiontype="totalexecutions">
-      <testcase name="FI" state="users" users="1"/>
+      <testcase name="FI" state="users" users="1" totalexecutions="1"/>
     </iteration>
   </execution>
   <logs/>
