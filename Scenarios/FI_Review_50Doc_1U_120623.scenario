@@ -29,7 +29,8 @@
     <userinfo/>
   </basics>
   <resources>
-    <resource name="FI_Review_Export.ds" type="ds" path="REPOSITORY/Forms_Intelligence/Scripts/FI_Review_Export.ds"/>
+    <resource name="FI_Review_Export.ds" type="ds" path="{scenario}/../Scripts/FI_Review_Export.ds"/>
+    <resource name="LoginFI.csv" type="csv" path="REPOSITORY/Forms_Intelligence/LoginFI.csv"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://3.17.235.203:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
@@ -40,7 +41,13 @@
     <bundle name="oracle" version="10.2.0.5"/>
     <bundle name="ds" version="3.0"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="Login" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="LoginFI.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
