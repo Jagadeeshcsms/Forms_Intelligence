@@ -30,7 +30,12 @@
   </basics>
   <resources>
     <resource name="FI_Review_Export.ds" type="ds" path="{scenario}/../Scripts/FI_Review_Export.ds"/>
-    <resource name="LoginFI.csv" type="csv" path="REPOSITORY/Forms_Intelligence/LoginFI.csv"/>
+    <resource name="LoginFI.csv" type="csv" path="{scenario}/../LoginFI.csv"/>
+    <resource name="SelectCheckBoxInReviewPage.js" type="js" path="{scenario}/../Scripts/SelectCheckBoxInReviewPage.js"/>
+    <resource name="ClickForm&amp;MarkAsReviewed.js" type="js" path="{scenario}/../Scripts/ClickForm&amp;MarkAsReviewed.js"/>
+    <resource name="Logout.ds" type="ds" path="{scenario}/../Scripts/Logout.ds"/>
+    <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
+    <resource name="Forms_Intelligence" type="folder" path="{scenario}/../"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://3.17.235.203:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
