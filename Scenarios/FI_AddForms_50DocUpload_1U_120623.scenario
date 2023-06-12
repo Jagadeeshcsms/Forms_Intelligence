@@ -35,6 +35,7 @@
     <resource name="FI_MultipleFilesUpload.js" type="js" path="{scenario}/../Scripts/FI_MultipleFilesUpload.js"/>
     <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
     <resource name="Logout.ds" type="ds" path="{scenario}/../Scripts/Logout.ds"/>
+    <resource name="Forms_Intelligence" type="folder" path="{scenario}/../"/>
   </resources>
   <testnodes>
     <node name="localhost-1" location="http://3.17.235.203:8080/TMServer/ws/TestNode" username="appvance" password="appvance" bandwidth_enabled="false" latency_enabled="false"/>
@@ -154,7 +155,6 @@
       <test>
         <run name="FI" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Chrome">
           <argument name="Untitled1" method="getNextData" dpl="Login"/>
-          <argument name="Untitled2" method="getData" dpl="TheLocker"/>
         </run>
       </test>
     </testcase>
