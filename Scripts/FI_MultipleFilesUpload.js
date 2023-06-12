@@ -4,5 +4,5 @@ wait(40000);
 setBulkFiles2(byXPath('//*[@type="file"]'),"{ds}/../TestData/10files/");
 wait(40000);
 click(span(0, _in(button("Upload"))));
-wait(20000);
+wait(30000);
 }
