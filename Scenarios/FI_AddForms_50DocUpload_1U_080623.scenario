@@ -37,7 +37,7 @@
     <resource name="Logout.ds" type="ds" path="{scenario}/../Scripts/Logout.ds"/>
   </resources>
   <testnodes>
-    <node name="localhost-1" location="http://3.128.178.229:8080/TMServer/ws/TestNode" username="appvance" password="appvance" bandwidth_enabled="false" latency_enabled="false"/>
+    <node name="localhost-1" location="http://3.17.235.203:8080/TMServer/ws/TestNode" username="appvance" password="appvance" bandwidth_enabled="false" latency_enabled="false"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
