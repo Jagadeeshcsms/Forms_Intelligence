@@ -6,11 +6,11 @@ for (i = 1; i <= pageno; i++) {
   	wait(2000);
     for (k = 1; k <= ChkNo; k++) {
         click(byXPath('(//td[contains(text(),"Uploaded")]//parent::tr//input[@type="checkbox"])[' + k + ']'));
-      wait(15000);
+      wait(2000);
     }
     if (i < pageno) {
         var ind = i + 1;
         click(byXPath('(//div[@class="k-pager-numbers"]//button)[' + ind + ']'));
-        wait(3000);
+        wait(30000);
     }
 }
