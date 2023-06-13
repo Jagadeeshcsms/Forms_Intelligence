@@ -145,7 +145,7 @@
     </options>
   </options>
   <templates>
-    <controller name="1000Doc_1U">
+    <controller name="500Doc_1U">
       <round iterations="1"/>
     </controller>
     <testcase name="Review" importance="normal">
@@ -160,7 +160,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="1000Doc_1U" controller="1000Doc_1U" completiontype="totalexecutions">
+    <iteration name="500Doc_1U" controller="500Doc_1U" completiontype="totalexecutions">
       <testcase name="Review" users="1"/>
     </iteration>
   </execution>
