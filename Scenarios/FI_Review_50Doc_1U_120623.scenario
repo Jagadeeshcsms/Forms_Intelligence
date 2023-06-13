@@ -38,7 +38,7 @@
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/../"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://3.13.133.109:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
+    <node name="localhost" location="http://3.131.246.170:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
