@@ -37,9 +37,7 @@
     <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/../"/>
   </resources>
-  <testnodes>
-    <node name="localhost" location="http://3.131.246.170:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
-  </testnodes>
+  <testnodes/>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
     <bundle name="mysql" version="5.1.39"/>
