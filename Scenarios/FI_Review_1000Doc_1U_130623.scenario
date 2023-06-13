@@ -37,7 +37,10 @@
     <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/../"/>
   </resources>
-  <testnodes/>
+  <testnodes>
+    <node name="localhost-1" location="http://3.13.133.109:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
+    <node name="localhost-2" location="http://3.131.246.170:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
+  </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
     <bundle name="mysql" version="5.1.39"/>
@@ -145,7 +148,7 @@
     </options>
   </options>
   <templates>
-    <controller name="500Doc_1U">
+    <controller name="1000Doc_1U">
       <round iterations="1"/>
     </controller>
     <testcase name="Review" importance="normal">
@@ -160,7 +163,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="500Doc_1U" controller="500Doc_1U" completiontype="totalexecutions">
+    <iteration name="1000Doc_1U" controller="1000Doc_1U" completiontype="totalexecutions">
       <testcase name="Review" users="1"/>
     </iteration>
   </execution>
