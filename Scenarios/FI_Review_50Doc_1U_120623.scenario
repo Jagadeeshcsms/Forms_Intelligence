@@ -150,8 +150,8 @@
     </controller>
     <testcase name="Review" importance="normal">
       <test>
-        <run name="FI_Review" langtype="ds3" resource="FI_Review_Export.ds" method="ds" testclass="Chrome">
-          <argument name="Untitled1" method="getData" dpl="TheLocker"/>
+        <run name="FI_Review" langtype="ds3" resource="FI_Review_Export.ds" method="ds" testclass="Edge">
+          <argument name="Untitled1" method="getNextData" dpl="Login"/>
         </run>
       </test>
     </testcase>
