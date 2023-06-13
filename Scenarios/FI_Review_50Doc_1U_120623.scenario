@@ -61,7 +61,7 @@
       <opt name="ConsoleAsProxy" value="false"/>
     </options>
     <options type="reporting">
-      <opt name="summaryType" value="testCaseOnly"/>
+      <opt name="summaryType" value="complete"/>
       <opt name="DynamicParameterList" value="[]"/>
     </options>
     <options type="apc">
@@ -94,8 +94,8 @@
       <opt name="RampDownSeconds" value="0"/>
       <opt name="MaxRampDownTime" value="0"/>
       <opt name="tolerance" value="0"/>
-      <opt name="global_concurrent_users" value="1"/>
-      <opt name="testnode_concurrent_users" value="1"/>
+      <opt name="global_concurrent_users" value="0"/>
+      <opt name="testnode_concurrent_users" value="0"/>
     </options>
     <options type="commandline">
       <opt name="async" value="false"/>
@@ -126,6 +126,9 @@
     </options>
     <options type="jira">
       <opt name="useJira" value="false"/>
+      <opt name="jiraIssueTypes" value="[object Object]"/>
+      <opt name="jiraFailure" value="[object Object]"/>
+      <opt name="jiraSuccess" value="[object Object]"/>
     </options>
     <options type="lr">
       <opt name="saveCompleteLrOutputLog" value="false"/>
