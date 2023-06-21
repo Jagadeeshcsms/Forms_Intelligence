@@ -36,6 +36,7 @@
     <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
     <resource name="Logout.ds" type="ds" path="{scenario}/../Scripts/Logout.ds"/>
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/../"/>
+    <resource name="50files" type="folder" path="{scenario}/../TestData/50files/"/>
   </resources>
   <testnodes>
     <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1"/>
@@ -94,8 +95,8 @@
       <opt name="RampDownSeconds" value="0"/>
       <opt name="MaxRampDownTime" value="0"/>
       <opt name="tolerance" value="0"/>
-      <opt name="global_concurrent_users" value="1"/>
-      <opt name="testnode_concurrent_users" value="1"/>
+      <opt name="global_concurrent_users" value="0"/>
+      <opt name="testnode_concurrent_users" value="0"/>
     </options>
     <options type="commandline">
       <opt name="async" value="false"/>
@@ -174,7 +175,7 @@
   <monitoring enablednodes="true"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="FI_AddFormes" controller="FI_AddFormes" completiontype="totalexecutions">
-      <testcase name="FI" state="users" users="1"/>
+      <testcase name="FI" state="users" users="1" totalexecutions="1"/>
     </iteration>
   </execution>
   <logs/>
