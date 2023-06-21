@@ -36,6 +36,7 @@
     <resource name="Logout.ds" type="ds" path="{scenario}/../Scripts/Logout.ds"/>
     <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/../"/>
+    <resource name="50files" type="folder" path="{scenario}/../TestData/50files/"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://3.131.246.170:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
@@ -163,7 +164,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="Iteration1" controller="Iteration1" completiontype="totalexecutions">
-      <testcase name="Review" users="1"/>
+      <testcase name="Review" users="1" totalexecutions="1"/>
     </iteration>
   </execution>
   <logs/>
