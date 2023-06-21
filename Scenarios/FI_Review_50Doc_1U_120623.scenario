@@ -39,7 +39,7 @@
     <resource name="50files" type="folder" path="{scenario}/../TestData/50files/"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="http://3.131.246.170:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
+    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/../../QA/PMX/cloud_vpc_test.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
