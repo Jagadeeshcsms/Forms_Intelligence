@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<cloud type="EC2" version="1">
+	<config-param key="AIQProtocol" value="http"/>
+	<config-param key="AIQPort" value="8080"/>
+	<config-param key="Ec2Timeout" value="25"/>
+	<config-param key="AccountName" value="MRI_VPC_Cloud_Test"/>
+	<config-param key="AWSKey" value="AKIAVAQVGLPHTBX6VYPW"/>
+	<config-param key="AWSSecretAcessKey" value="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"/>
+	<config-param key="AMI" value="ami-05912aeabdfd28b56"/>
+	<config-param key="InstanceType" value="m5a.2xlarge"/>
+	<config-param key="KeyPair" value="mri-prod"/>
+	<config-param key="Security" value="sg-0bd9aa0dd3a41afa6"/>
+	<config-param key="AWSRegion" value="us-east-2.ec2.amazonaws.com"/>
+	<config-param key="vpcId" value="vpc-0f8b8c60a345a8e48"/>
+	<config-param key="subnetId" value="subnet-02881b68ab12c1ef6"/>
+</cloud>
