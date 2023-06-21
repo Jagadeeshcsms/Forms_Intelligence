@@ -36,7 +36,7 @@
     <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
     <resource name="Logout.ds" type="ds" path="{scenario}/../Scripts/Logout.ds"/>
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/../"/>
-    <resource name="50files" type="folder" path="{scenario}/../TestData/50files/"/>
+    <resource name="10files" type="folder" path="{scenario}/../TestData/10files/"/>
   </resources>
   <testnodes>
     <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/../ec2_cloud_config.cloud" username="appvance" password="appvance"/>
@@ -175,7 +175,7 @@
   <monitoring enablednodes="true"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="FI_AddFormes" controller="FI_AddFormes" completiontype="totalexecutions">
-      <testcase name="FI" state="users" users="1" totalexecutions="1"/>
+      <testcase name="FI" state="users" users="1"/>
     </iteration>
   </execution>
   <logs/>
