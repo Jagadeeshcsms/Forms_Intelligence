@@ -154,7 +154,7 @@
     </controller>
     <testcase name="FI" importance="normal">
       <test>
-        <run name="FI" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Chrome">
+        <run name="FI" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Edge">
           <argument name="Untitled1" method="getNextData" dpl="Login"/>
         </run>
       </test>
