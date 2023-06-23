@@ -1,4 +1,4 @@
-for(i=1;i<=1;i++){
+for(i=1;i<=4;i++){
 click(span(any("Add Forms","mri-button__label")));
 wait(5000);
 setBulkFiles2(byXPath('//*[@type="file"]'),"{ds}/../TestData/10files/");
