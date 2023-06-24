@@ -39,7 +39,7 @@
     <resource name="10files" type="folder" path="{scenario}/../TestData/10files/"/>
   </resources>
   <testnodes>
-    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/../../QA/RentPayment/cloud_vpc_test.cloud" username="appvance" password="appvance"/>
+    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/../../QA/PMX/cloud_vpc_test.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
