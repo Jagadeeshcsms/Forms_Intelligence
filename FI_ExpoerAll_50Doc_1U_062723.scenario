@@ -29,7 +29,10 @@
     <userinfo/>
   </basics>
   <resources>
-    <resource name="ExportAll.ds" type="ds" path="REPOSITORY/Forms_Intelligence/Scripts/ExportAll.ds"/>
+    <resource name="ExportAll.ds" type="ds" path="{scenario}/Scripts/ExportAll.ds"/>
+    <resource name="LoginFI.csv" type="csv" path="{scenario}/LoginFI.csv"/>
+    <resource name="Forms_Intelligence" type="folder" path="{scenario}/"/>
+    <resource name="Login.ds" type="ds" path="{scenario}/Scripts/Login.ds"/>
   </resources>
   <testnodes>
     <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/ec2_cloud_config.cloud" username="appvance" password="appvance"/>
@@ -40,7 +43,13 @@
     <bundle name="oracle" version="10.2.0.5"/>
     <bundle name="ds" version="3.0"/>
   </bundles>
-  <datasources/>
+  <datasources>
+    <dpl name="Login" type="HashDPL" langtype="java" method="setup">
+      <argument name="resource" dpl="Resources" method="getResourceByName">
+        <argument name="file" value="LoginFI.csv"/>
+      </argument>
+    </dpl>
+  </datasources>
   <options>
     <options type="global">
       <opt name="trustAllSSLCertificates" value="false"/>
