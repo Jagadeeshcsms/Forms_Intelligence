@@ -35,7 +35,7 @@
     <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
   </resources>
   <testnodes>
-    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/../ec2_cloud_config.cloud" username="appvance" password="appvance"/>
+    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="2" config="{scenario}/../ec2_cloud_config.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
