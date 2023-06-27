@@ -23,12 +23,12 @@
    <accessor type='click' value=' paragraph(&quot;UK DLUHC Leaseholder DOC 2022&quot;) ' selected='false'/>
 </dialect>
 </step>
-<step action='wait' value='1000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='wait' value='1000' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
   <dialect type='sahi'>
    <accessor type='wait' value='' selected='true'/>
 </dialect>
 </step>
-<step action='click' value='""' type='web' desc='ClickOnAddFormsButton' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='click' value='""' type='web' desc='ClickOnAddFormsButton' isThinkTime='false' isCommented='true' sequence='0'>
   <dialect type='sahi'>
    <accessor type='click' value='span(&quot;Add Forms&quot;)' selected='true'/>
    <accessor type='click' value='span(0, _in(button(&quot;mri-button&quot;)))' selected='false'/>
@@ -37,7 +37,7 @@
    <accessor type='click' value='span(&quot;mri-button__label&quot;)' selected='false'/>
 </dialect>
 </step>
-<step action='wait' value='10000' type='web' desc='WaitTime' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='wait' value='10000' type='web' desc='WaitTime' isThinkTime='false' isCommented='true' sequence='0'>
   <dialect type='sahi'>
    <accessor type='wait' value='' selected='true'/>
 </dialect>
