@@ -33,6 +33,7 @@
     <resource name="LoginFI.csv" type="csv" path="{scenario}/LoginFI.csv"/>
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/"/>
     <resource name="50files" type="folder" path="{scenario}/TestData/50files/"/>
+    <resource name="Forms_Intelligence/Scripts/ExportAll.ds" type="ds" path="{scenario}/Scripts/ExportAll.ds"/>
   </resources>
   <testnodes>
     <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/ec2_cloud_config.cloud" username="appvance" password="appvance"/>
@@ -146,7 +147,7 @@
     </controller>
     <testcase name="ExportAll" importance="normal">
       <test>
-        <run name="ExportAll" langtype="ds3" resource="ExportAll.ds" method="ds" testclass="Edge">
+        <run name="ExportAll" langtype="ds3" resource="Forms_Intelligence/Scripts/ExportAll.ds" method="ds" testclass="Edge">
           <argument name="Login" method="getNextData" dpl="Login"/>
         </run>
       </test>
