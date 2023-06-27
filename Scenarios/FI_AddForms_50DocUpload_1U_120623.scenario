@@ -31,7 +31,6 @@
   <resources>
     <resource name="FI_AddForms.ds" type="ds" path="{scenario}/../Scripts/FI_AddForms.ds"/>
     <resource name="LoginFI.csv" type="csv" path="{scenario}/../LoginFI.csv"/>
-    <resource name="BeforeExtractSelctAllDocuments.js" type="js" path="{scenario}/../Scripts/BeforeExtractSelctAllDocuments.js"/>
     <resource name="FI_MultipleFilesUpload.js" type="js" path="{scenario}/../Scripts/FI_MultipleFilesUpload.js"/>
     <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
     <resource name="Logout.ds" type="ds" path="{scenario}/../Scripts/Logout.ds"/>
