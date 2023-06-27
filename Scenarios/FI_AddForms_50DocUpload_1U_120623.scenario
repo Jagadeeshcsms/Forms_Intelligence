@@ -174,7 +174,7 @@
   <monitoring enablednodes="true"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="FI_AddFormes" controller="FI_AddFormes" completiontype="totalexecutions">
-      <testcase name="FI" state="users" users="1"/>
+      <testcase name="FI" state="users" users="1" totalexecutions="1"/>
     </iteration>
   </execution>
   <logs/>
