@@ -35,10 +35,10 @@
     <resource name="Login.ds" type="ds" path="{scenario}/Scripts/Login.ds"/>
     <resource name="Logout.ds" type="ds" path="{scenario}/Scripts/Logout.ds"/>
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/"/>
-    <resource name="100files" type="folder" path="{scenario}/TestData/100files/"/>
+    <resource name="50files" type="folder" path="{scenario}/TestData/50files/"/>
   </resources>
   <testnodes>
-    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="2" config="{scenario}/ec2_cloud_config.cloud" username="appvance" password="appvance"/>
+    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/ec2_cloud_config.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -148,10 +148,10 @@
     </options>
   </options>
   <templates>
-    <controller name="FI_AddFormes_100Doc">
+    <controller name="FI_AddFormes_50Doc">
       <round iterations="1"/>
     </controller>
-    <testcase name="FI_AddForms_100Doc" importance="normal">
+    <testcase name="FI_AddForms_50Doc" importance="normal">
       <test>
         <run name="FI_AddForms_100Doc" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Edge">
           <argument name="Untitled1" method="getNextData" dpl="Login"/>
@@ -173,8 +173,8 @@
   </templates>
   <monitoring enablednodes="true"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="FI_AddFormes_100Doc" controller="FI_AddFormes_100Doc" completiontype="totalexecutions">
-      <testcase name="FI_AddForms_100Doc" state="users" users="1"/>
+    <iteration name="FI_AddFormes_50Doc" controller="FI_AddFormes_50Doc" completiontype="totalexecutions">
+      <testcase name="FI_AddForms_50Doc" state="users" users="1"/>
     </iteration>
   </execution>
   <logs/>
