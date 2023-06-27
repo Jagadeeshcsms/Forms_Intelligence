@@ -31,6 +31,8 @@
   <resources>
     <resource name="ExportAll.ds" type="ds" path="{scenario}/Scripts/ExportAll.ds"/>
     <resource name="LoginFI.csv" type="csv" path="{scenario}/LoginFI.csv"/>
+    <resource name="Forms_Intelligence" type="folder" path="{scenario}/"/>
+    <resource name="50files" type="folder" path="{scenario}/TestData/50files/"/>
   </resources>
   <testnodes>
     <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/ec2_cloud_config.cloud" username="appvance" password="appvance"/>
