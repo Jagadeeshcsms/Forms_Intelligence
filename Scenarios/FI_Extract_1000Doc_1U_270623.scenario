@@ -145,7 +145,7 @@
     <testcase name="BulkExtract" importance="normal">
       <test>
         <run name="Bulk_Extract" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Edge">
-          <argument name="Login" method="getData" dpl="TheLocker"/>
+          <argument name="Login" method="getNextData" dpl="Login"/>
         </run>
       </test>
     </testcase>
@@ -155,7 +155,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="Extract_1000" controller="Extract_1000" completiontype="totalexecutions">
-      <testcase name="BulkExtract" users="1" totalexecutions="1"/>
+      <testcase name="BulkExtract" users="1"/>
     </iteration>
   </execution>
   <logs/>
