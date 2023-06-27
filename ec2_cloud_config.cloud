@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-	<cloud type="EC2" version="1">
-	<config-param key="AIQProtocol" value="http"/>
-	<config-param key="AIQPort" value="8080"/>
-	<config-param key="Ec2Timeout" value="25"/>
-	<config-param key="AccountName" value="MRI_VPC_Cloud_Test"/>
-	<config-param key="AWSKey" value="AKIAVAQVGLPHTBX6VYPW"/>
-	<config-param key="AWSSecretAcessKey" value="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"/>
-	<config-param key="AMI" value="ami-05912aeabdfd28b56"/>
-	<config-param key="InstanceType" value="m5a.2xlarge"/>
-	<config-param key="KeyPair" value="mri-prod"/>
-	<config-param key="Security" value="sg-0bd9aa0dd3a41afa6"/>
-	<config-param key="AWSRegion" value="us-east-2.ec2.amazonaws.com"/>
-	<config-param key="vpcId" value="vpc-0f8b8c60a345a8e48"/>
-	<config-param key="subnetId" value="subnet-02881b68ab12c1ef6"/>
-</cloud>
+pma9QDLKQn1OMlkce6L4AHwwW8d/xS3yZuvdeUTPrnCkqNjJ4BIGTaNTNGbvdNqLSBCMjPF9LzvPMOQePxqsaXaCg7btor68EDU+/JT6BtS6IH4GRAeL/GOREVDQdpF5FhRXf14ioZzhqoVjSYOZ0BYipQNunuhISO6dO5mflh9p03f3fvZElpu8DIqXvdywsmt5Yv/kUSL/1m5nnzsrQAuEt8FESSie5xuVK+RfMBTLIxs8XioubDoVoCkhFov1NymNyjxmWRcKqNil9WrGsnL72RhmeJHeBkHsdkzEFyFy7jWN8b6RMjZVHVCnM2NhOoTL/Z/vd9niP4ENemgdCL8Yj5zV05nK1WX82y0Q0oUcN8Q7IGEY7lf5YmMFxLirysfWWQzM+CGSDCTISwpBlusb9nMfykJQbmC3KEj2WC2OET53z/mJo2ytuTRPaXE6EQAU9PDebrHQibG7HWS8hVDQZdflv+xL+KnS8sbBcvw6+2xZ46JMFrzYPurLHuuu/hSIzJy17HEgE2/3iKdeJhb3eqaGzv2mDd5uQuNj+o4G+NPgpDaKXyaK6saaHWHh/DahtsNav/QBVYvPUQsg4T6ck/BudkvXKjIRq6EBhpohWhVF6kQdGmbirVcb+9nEXDKLBXVCNbqrbWQ3SbdiOOctyYw998gp9ScfJqK/cVdkmQqbLziUkHoKnQauX8DUWCyiUvic7fDis9zcREjTCBHRrKqmkf2XcqSq8Lx4D4amaRkGYkPROb3d72fpCA/8QEKBDA3y+X3IlhyTP1Zsc75Vl6W2O05ycQXBTnWVVlI5qQnJcQ5jF8ELn19C6kOs5phlVHh/gA37iEmbQdzKkEgMR8Qm7m5jccj01Vp2M2R+RBjZ7y6i4nzKsOT1rJpq0fSdneuq5xsPwoMRjaiUBDMPpOPmjHfAw9a7UEeXE2TilqpA+15QYtvXyx0NkdYVnHbU+34PiU4mXlpZLP6CaeCMYjLEltRKVE62k5cplNFkI7esR0uwaTiiDL/9GaFRClRrhVbcCoaFbUB6jz4d74zLeFTCwAyaFMgA8ReyVk2JOqclPEQviEvBIT3ohhQsC0UwUZUATQxo+bjXbSPZ3JW2IlOTwNmOG9AEfsZarMQ=
