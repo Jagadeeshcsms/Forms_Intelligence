@@ -29,11 +29,13 @@
     <userinfo/>
   </basics>
   <resources>
-    <resource name="FI_AddForms.ds" type="ds" path="REPOSITORY/Forms_Intelligence/Scripts/FI_AddForms.ds"/>
-    <resource name="LoginFI.csv" type="csv" path="REPOSITORY/Forms_Intelligence/LoginFI.csv"/>
+    <resource name="FI_AddForms.ds" type="ds" path="{scenario}/../Scripts/FI_AddForms.ds"/>
+    <resource name="LoginFI.csv" type="csv" path="{scenario}/../LoginFI.csv"/>
+    <resource name="BeforeExtractSelctAllDocuments.js" type="js" path="{scenario}/../Scripts/BeforeExtractSelctAllDocuments.js"/>
+    <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
   </resources>
   <testnodes>
-    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="REPOSITORY/Forms_Intelligence/ec2_cloud_config.cloud" username="appvance" password="appvance"/>
+    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/../ec2_cloud_config.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
