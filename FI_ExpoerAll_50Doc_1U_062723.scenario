@@ -32,7 +32,7 @@
     <resource name="ExportAll.ds" type="ds" path="REPOSITORY/Forms_Intelligence/Scripts/ExportAll.ds"/>
   </resources>
   <testnodes>
-    <node name="localhost" location="https://aiq.mri.appvance.net:/TMServer/ws/TestNode"/>
+    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/ec2_cloud_config.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
