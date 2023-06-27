@@ -32,7 +32,7 @@
     <resource name="FI_AddForms.ds" type="ds" path="REPOSITORY/Forms_Intelligence/Scripts/FI_AddForms.ds"/>
   </resources>
   <testnodes>
-    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="REPOSITORY/Forms_Intelligence/ec2_cloud_config.cloud"/>
+    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="REPOSITORY/Forms_Intelligence/ec2_cloud_config.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
