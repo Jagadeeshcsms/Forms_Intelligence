@@ -33,6 +33,7 @@
     <resource name="LoginFI.csv" type="csv" path="{scenario}/../LoginFI.csv"/>
     <resource name="BeforeExtractSelctAllDocuments.js" type="js" path="{scenario}/../Scripts/BeforeExtractSelctAllDocuments.js"/>
     <resource name="Login.ds" type="ds" path="{scenario}/../Scripts/Login.ds"/>
+    <resource name="Forms_Intelligence" type="folder" path="{scenario}/../"/>
   </resources>
   <testnodes>
     <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="2" config="{scenario}/../ec2_cloud_config.cloud" username="appvance" password="appvance"/>
@@ -123,6 +124,10 @@
     </options>
     <options type="jira">
       <opt name="useJira" value="false"/>
+      <opt name="jiraConfiguration" value="MRITest"/>
+      <opt name="jiraIssueTypes" value="Bug"/>
+      <opt name="jiraFailure" value="1"/>
+      <opt name="jiraSuccess" value="10002"/>
     </options>
     <options type="lr">
       <opt name="saveCompleteLrOutputLog" value="false"/>
