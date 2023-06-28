@@ -48,7 +48,7 @@
    <accessor type='click' value='span(&quot;mri-button__label[1]&quot;)' selected='false'/>
 </dialect>
 </step>
-<step action='setBulkFiles2' value='"{ds}/../TestData/10files/"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
+<step action='setBulkFiles2' value='"{ds}/10files/"' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
   <dialect type='sahi'>
    <accessor type='setBulkFiles2' value='  ' selected='true'/>
 </dialect>
