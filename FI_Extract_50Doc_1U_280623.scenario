@@ -148,7 +148,7 @@
     <testcase name="BulkExtract" importance="normal">
       <test>
         <run name="BulkExtract_50Doc" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Edge">
-          <argument name="Login" method="getData" dpl="TheLocker"/>
+          <argument name="Login" method="getNextData" dpl="Login"/>
         </run>
       </test>
     </testcase>
