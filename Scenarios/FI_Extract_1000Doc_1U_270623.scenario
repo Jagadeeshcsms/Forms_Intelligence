@@ -36,7 +36,7 @@
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/../"/>
   </resources>
   <testnodes>
-    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="2" config="{scenario}/../ec2_cloud_config.cloud" username="appvance" password="appvance"/>
+    <cloud name="MRIVPCEC2" type="EC2" instantiate="all" terminate="all" reboot="never" amount="1" config="{scenario}/../ec2_cloud_config.cloud" username="appvance" password="appvance"/>
   </testnodes>
   <bundles>
     <bundle name="hibernate" version="3.0"/>
@@ -146,7 +146,7 @@
     </options>
   </options>
   <templates>
-    <controller name="Extract_1000">
+    <controller name="Extract_50Doc">
       <round iterations="1"/>
     </controller>
     <testcase name="BulkExtract" importance="normal">
@@ -161,7 +161,7 @@
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="Extract_1000" controller="Extract_1000" completiontype="totalexecutions">
+    <iteration name="Extract_50Doc" controller="Extract_50Doc" completiontype="totalexecutions">
       <testcase name="BulkExtract" users="1"/>
     </iteration>
   </execution>
