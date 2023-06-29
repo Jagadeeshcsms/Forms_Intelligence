@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase  name= '' description='' author='' version=''>
+<dpl filename='{ds}/LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
+<fallback useFallback='true'/>
+<step action='include' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='include' value='"{ds}/Login.ds"' selected='true'/>
+   <accessor type='include' value='password(&quot;password&quot;)' selected='false'/>
+   <accessor type='include' value='password(0, _in(span(&quot;focused-input input-fix o-form-control o-form-input-name-password okta-form-input-field&quot;)))' selected='false'/>
+   <accessor type='include' value='password(0)' selected='false'/>
+   <accessor type='include' value='password(&quot;okta-signin-password&quot;)' selected='false'/>
+   <accessor type='include' value='"{ds}/Login1.ds"' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='paragraph(&quot;UK DLUHC 2022&quot;)' selected='true'/>
+   <accessor type='click' value='paragraph(0, _in(div(&quot;project-card-header[4]&quot;)))' selected='false'/>
+   <accessor type='click' value='paragraph(0, _in(div(&quot;UK DLUHC 2022&quot;)))' selected='false'/>
+   <accessor type='click' value='paragraph(4)' selected='false'/>
+   <accessor type='click' value='paragraph(&quot;project-card-title[4]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Add Forms&quot;)' selected='true'/>
+   <accessor type='click' value='span(0, _in(button(&quot;mri-button&quot;)))' selected='false'/>
+   <accessor type='click' value='span(0, _in(button(&quot;Add Forms&quot;)))' selected='false'/>
+   <accessor type='click' value='span(6)' selected='false'/>
+   <accessor type='click' value='span(&quot;mri-button__label&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='setBulkFiles2' value='"{ds}/../../../Forms_Intelligence/TestData/10files/"' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='setBulkFiles2' value='byXPath(&apos;//*[@type=&quot;file&quot;]&apos;)' selected='true'/>
+   <accessor type='setBulkFiles2' value='  file(0)' selected='false'/>
+   <accessor type='setBulkFiles2' value='   file(0)' selected='false'/>
+   <accessor type='setBulkFiles2' value='"{ds}/../TestData/"' selected='false'/>
+</dialect>
+</step>
+<step action='wait' value='20000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
+</dialect>
+</step>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='click' value='span(&quot;Upload&quot;)' selected='true'/>
+   <accessor type='click' value='span(0, _in(button(&quot;control-item-export mri-button mri-button--primary&quot;)))' selected='false'/>
+   <accessor type='click' value='span(0, _in(button(&quot;Upload&quot;)))' selected='false'/>
+   <accessor type='click' value='span(0)' selected='false'/>
+   <accessor type='click' value='span(&quot;mri-button__label&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='include' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='include' value='"{ds}/Logout.ds"' selected='true'/>
+</dialect>
+</step>
+</testcase>
