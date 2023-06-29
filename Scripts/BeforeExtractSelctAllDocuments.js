@@ -11,6 +11,6 @@ for (i = 1; i <= pageno; i++) {
     if (i < pageno) {
         var ind = i + 1;
         click(byXPath('(//div[@class="k-pager-numbers"]//button)[' + ind + ']'));
-        wait(10000);
+        wait(12000);
     }
 }
