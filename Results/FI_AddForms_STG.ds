@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testcase  name= '' description='' author='' version=''>
-<dpl filename='{ds}/../LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
+<dpl filename='{ds}/../LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale=''/>
 <fallback useFallback='true'/>
 <step action='include' value='$Password' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='include' value='"{ds}/Login.ds"' selected='true'/>
+   <accessor type='include' value='"{ds}/../Scripts/Login.ds"' selected='true'/>
    <accessor type='include' value='password(&quot;password&quot;)' selected='false'/>
    <accessor type='include' value='password(0, _in(span(&quot;focused-input input-fix o-form-control o-form-input-name-password okta-form-input-field&quot;)))' selected='false'/>
    <accessor type='include' value='password(0)' selected='false'/>
    <accessor type='include' value='password(&quot;okta-signin-password&quot;)' selected='false'/>
    <accessor type='include' value='"{ds}/Login1.ds"' selected='false'/>
+   <accessor type='include' value='"{ds}/Login.ds"' selected='false'/>
 </dialect>
 </step>
 <step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
