@@ -14,11 +14,12 @@
 </step>
 <step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='click' value='paragraph(&quot;UK DLUHC 2022&quot;)' selected='true'/>
+   <accessor type='click' value=' paragraph(&quot;UK DLUHC Leaseholder DOC 2022&quot;) ' selected='true'/>
    <accessor type='click' value='paragraph(0, _in(div(&quot;project-card-header[4]&quot;)))' selected='false'/>
    <accessor type='click' value='paragraph(0, _in(div(&quot;UK DLUHC 2022&quot;)))' selected='false'/>
    <accessor type='click' value='paragraph(4)' selected='false'/>
    <accessor type='click' value='paragraph(&quot;project-card-title[4]&quot;)' selected='false'/>
+   <accessor type='click' value='paragraph(&quot;UK DLUHC 2022&quot;)' selected='false'/>
 </dialect>
 </step>
 <step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
