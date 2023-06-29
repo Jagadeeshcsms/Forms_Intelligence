@@ -149,12 +149,12 @@
     </options>
   </options>
   <templates>
-    <controller name="FI_AddFormes_50Doc">
+    <controller name="FI_AddFormes_500Doc">
       <round iterations="1"/>
     </controller>
     <testcase name="FI_AddForms_50Doc" importance="normal">
       <test>
-        <run name="FI_AddForms_100Doc" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Edge">
+        <run name="FI_AddForms_500Doc" langtype="ds3" resource="FI_AddForms.ds" method="ds" testclass="Edge">
           <argument name="Untitled1" method="getNextData" dpl="Login"/>
         </run>
       </test>
@@ -174,7 +174,7 @@
   </templates>
   <monitoring enablednodes="true"/>
   <execution type="loadtest" subtype="performance">
-    <iteration name="FI_AddFormes_50Doc" controller="FI_AddFormes_50Doc" completiontype="totalexecutions">
+    <iteration name="FI_AddFormes_500Doc" controller="FI_AddFormes_500Doc" completiontype="totalexecutions">
       <testcase name="FI_AddForms_50Doc" state="users" users="1"/>
     </iteration>
   </execution>
