@@ -3,7 +3,6 @@ click(span(any("Add Forms","mri-button__label")));
 wait(5000); 
 setBulkFiles2(byXPath('//*[@type="file"]'),"{ds}/../TestData/10files/");
 wait(25000);
-takeHtmlSnapshot();
 click(span(0, _in(button("Upload"))));
 wait(2000);
 }
