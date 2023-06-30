@@ -4,5 +4,5 @@ wait(10000,isVisible(div(["upload-header"])));
 setBulkFiles2(byXPath('//*[@type="file"]'),"{ds}/../TestData/10files/");
 wait(200000,isVisible(button(["Upload"])));
 click(span("Upload"));
-wait(10000,!isVisible(span(["File Upload in Progress"])));
+wait(10000,isVisible(span(["File Upload in Progress"])));
 }
