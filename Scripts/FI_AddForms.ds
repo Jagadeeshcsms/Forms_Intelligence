@@ -1,71 +1,70 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testcase   name= 'FI_AddForms.ds' description= '' author= '' version= ''>
+<testcase  name= '' description='' author='' version=''>
 <dpl filename='{ds}/../LoginFI.csv' exectype='runstepbystep' errorhandling='' type='HashDPL' locale='en_US'/>
 <fallback useFallback='true'/>
-<shadowDOM useShadowDOM='false'/>
 <step action='include' value='$Password' type='web' desc='Login' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='unknown' value='"{ds}/Login.ds"' fallback='true' selected='true'/>
-   <accessor type='unknown' value='password(&quot;password&quot;)' fallback='true' selected='false'/>
-   <accessor type='unknown' value='password(0, _in(span(&quot;focused-input input-fix o-form-control o-form-input-name-password okta-form-input-field&quot;)))' fallback='true' selected='false'/>
-   <accessor type='unknown' value='password(0)' fallback='false' selected='false'/>
-   <accessor type='unknown' value='password(&quot;okta-signin-password&quot;)' fallback='true' selected='false'/>
-   <accessor type='unknown' value='"{ds}/Login1.ds"' fallback='true' selected='false'/>
+   <accessor type='include' value='"{ds}/Login.ds"' selected='true'/>
+   <accessor type='include' value='password(&quot;password&quot;)' selected='false'/>
+   <accessor type='include' value='password(0, _in(span(&quot;focused-input input-fix o-form-control o-form-input-name-password okta-form-input-field&quot;)))' selected='false'/>
+   <accessor type='include' value='password(0)' selected='false'/>
+   <accessor type='include' value='password(&quot;okta-signin-password&quot;)' selected='false'/>
+   <accessor type='include' value='"{ds}/Login1.ds"' selected='false'/>
 </dialect>
 </step>
 <step action='click' value='""' type='web' desc='SelectingProject' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='unknown' value='paragraph(&quot;UK DLUHC Leaseholder DOC 2022&quot;)' fallback='true' selected='true'/>
-   <accessor type='unknown' value='paragraph(0, _in(div(&quot;project-card-header[4]&quot;)))' fallback='true' selected='false'/>
-   <accessor type='unknown' value='paragraph(0, _in(div(&quot;UK DLUHC 2022&quot;)))' fallback='true' selected='false'/>
-   <accessor type='unknown' value='paragraph(4)' fallback='false' selected='false'/>
-   <accessor type='unknown' value='paragraph(&quot;project-card-title[4]&quot;)' fallback='true' selected='false'/>
-   <accessor type='unknown' value='paragraph(&quot;UK DLUHC 2022&quot;)' fallback='true' selected='false'/>
-   <accessor type='unknown' value=' paragraph(&quot;UK DLUHC Leaseholder DOC 2022&quot;) ' fallback='true' selected='false'/>
+   <accessor type='click' value='paragraph(&quot;UK DLUHC Leaseholder DOC 2022&quot;)' selected='true'/>
+   <accessor type='click' value='paragraph(0, _in(div(&quot;project-card-header[4]&quot;)))' selected='false'/>
+   <accessor type='click' value='paragraph(0, _in(div(&quot;UK DLUHC 2022&quot;)))' selected='false'/>
+   <accessor type='click' value='paragraph(4)' selected='false'/>
+   <accessor type='click' value='paragraph(&quot;project-card-title[4]&quot;)' selected='false'/>
+   <accessor type='click' value='paragraph(&quot;UK DLUHC 2022&quot;)' selected='false'/>
+   <accessor type='click' value=' paragraph(&quot;UK DLUHC Leaseholder DOC 2022&quot;) ' selected='false'/>
 </dialect>
 </step>
 <step action='wait' value='1000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='true' selected='true'/>
+   <accessor type='wait' value='' selected='true'/>
 </dialect>
 </step>
 <step action='include' value='' type='web' desc='SelectingMultipleDocuments_ClickOnUpload' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='unknown' value='"{ds}/FI_MultipleFilesUpload.js"' fallback='true' selected='true'/>
+   <accessor type='include' value='"{ds}/FI_MultipleFilesUpload.js"' selected='true'/>
 </dialect>
 </step>
-<step action='wait' value='1000' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='wait' value='1000' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='true' selected='true'/>
+   <accessor type='wait' value='' selected='true'/>
 </dialect>
 </step>
-<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='click' value='""' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='unknown' value='span(0, _in(button(&quot;Upload&quot;)))' fallback='true' selected='true'/>
-   <accessor type='unknown' value='span(0, _in(button(&quot;control-item-export mri-button mri-button--primary&quot;)))' fallback='true' selected='false'/>
-   <accessor type='unknown' value='span(0)' fallback='false' selected='false'/>
-   <accessor type='unknown' value='span(&quot;mri-button__label&quot;)' fallback='true' selected='false'/>
-   <accessor type='unknown' value='span(&quot;Upload&quot;)' fallback='true' selected='false'/>
+   <accessor type='click' value='span(0, _in(button(&quot;Upload&quot;)))' selected='true'/>
+   <accessor type='click' value='span(0, _in(button(&quot;control-item-export mri-button mri-button--primary&quot;)))' selected='false'/>
+   <accessor type='click' value='span(0)' selected='false'/>
+   <accessor type='click' value='span(&quot;mri-button__label&quot;)' selected='false'/>
+   <accessor type='click' value='span(&quot;Upload&quot;)' selected='false'/>
 </dialect>
 </step>
 <step action='include' value='' type='web' desc='SelectingAllDocuments' isThinkTime='false' isCommented='true' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='unknown' value='"{ds}/BeforeExtractSelctAllDocuments.js"' fallback='true' selected='true'/>
-   <accessor type='unknown' value='"{ds}/CliclPageinAddForms.js"' fallback='true' selected='false'/>
+   <accessor type='include' value='"{ds}/BeforeExtractSelctAllDocuments.js"' selected='true'/>
+   <accessor type='include' value='"{ds}/CliclPageinAddForms.js"' selected='false'/>
 </dialect>
 </step>
 <step action='wait' value='3000' type='web' desc='' isThinkTime='false' isCommented='true' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='unknown' value='' fallback='true' selected='true'/>
+   <accessor type='wait' value='' selected='true'/>
 </dialect>
 </step>
 <step action='click' value='""' type='web' desc='ClickOnExtractButton' isThinkTime='false' isCommented='true' sequence='0'>
   <dialect type='sahi'>
-   <accessor type='unknown' value='span(&quot;Extract&quot;)' fallback='true' selected='true'/>
-   <accessor type='unknown' value='span(0, _in(button(&quot;mri-button mri-button--primary&quot;)))' fallback='true' selected='false'/>
-   <accessor type='unknown' value='span(0, _in(button(&quot;Extract&quot;)))' fallback='true' selected='false'/>
-   <accessor type='unknown' value='span(7)' fallback='false' selected='false'/>
-   <accessor type='unknown' value='span(&quot;mri-button__label[1]&quot;)' fallback='true' selected='false'/>
+   <accessor type='click' value='span(&quot;Extract&quot;)' selected='true'/>
+   <accessor type='click' value='span(0, _in(button(&quot;mri-button mri-button--primary&quot;)))' selected='false'/>
+   <accessor type='click' value='span(0, _in(button(&quot;Extract&quot;)))' selected='false'/>
+   <accessor type='click' value='span(7)' selected='false'/>
+   <accessor type='click' value='span(&quot;mri-button__label[1]&quot;)' selected='false'/>
 </dialect>
 </step>
 </testcase>
