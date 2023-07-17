@@ -58,7 +58,7 @@
    <accessor type='wait' value='' selected='true'/>
 </dialect>
 </step>
-<step action='js' value='' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+<step action='js' value='com.appvance.enterprise.tool.APCStepListener.startSummaryStep(&quot;&quot;)' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
   <dialect type='sahi'>
    <accessor type='js' value='' selected='true'/>
 </dialect>
@@ -70,6 +70,11 @@
    <accessor type='click' value='span(0, _in(button(&quot;Extract&quot;)))' selected='false'/>
    <accessor type='click' value='span(7)' selected='false'/>
    <accessor type='click' value='span(&quot;mri-button__label[1]&quot;)' selected='false'/>
+</dialect>
+</step>
+<step action='wait' value='310000,isVisible(heading2(0, _in(div(&quot;ExtractComplated&quot;))))' type='web' desc='' isThinkTime='false' isCommented='false' sequence='0'>
+  <dialect type='sahi'>
+   <accessor type='wait' value='' selected='true'/>
 </dialect>
 </step>
 </testcase>
