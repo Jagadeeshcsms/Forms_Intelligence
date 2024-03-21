@@ -29,7 +29,6 @@
     <userinfo/>
   </basics>
   <resources>
-    <resource name="ExportAll.ds" type="ds" path="{scenario}/Scripts/ExportAll.ds"/>
     <resource name="LoginFI.csv" type="csv" path="{scenario}/LoginFI.csv"/>
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/"/>
     <resource name="Login.ds" type="ds" path="{scenario}/Scripts/Login.ds"/>
