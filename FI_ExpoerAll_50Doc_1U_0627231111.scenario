@@ -33,6 +33,7 @@
     <resource name="Forms_Intelligence" type="folder" path="{scenario}/"/>
     <resource name="Login.ds" type="ds" path="{scenario}/Scripts/Login.ds"/>
     <resource name="Forms_Intelligence/Scripts/ExportAll.ds" type="ds" path="{scenario}/Scripts/ExportAll.ds"/>
+    <resource name="10files" type="folder" path="{scenario}/Scripts/10files/"/>
   </resources>
   <testnodes>
     <node name="localhost-1" location="http://192.168.1.72:8080/TMServer/ws/TestNode" username="appvance" password="appvance"/>
